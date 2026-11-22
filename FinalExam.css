@@ -370,6 +370,8 @@ body:has(.visitsNav:hover, .learnNav:hover, .supportNav:hover, .aboutUsNav:hover
     opacity: 1;
 }
 
+/* mobile respon */
+
 @media (max-width: 768px) {
     #mainContainer {
         flex-direction: column;
