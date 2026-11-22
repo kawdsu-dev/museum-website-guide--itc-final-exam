@@ -369,3 +369,110 @@ body:has(.visitsNav:hover, .learnNav:hover, .supportNav:hover, .aboutUsNav:hover
     visibility: visible;
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    #mainContainer {
+        flex-direction: column;
+        height: auto;
+        margin: 10px;
+    }
+
+    #mainContainerLeft {
+        height: auto;
+        margin: 10px 10px 0 10px;
+        padding: 40px 15px;
+    }
+
+    .mainTextContainer {
+        width: 100%;
+        height: auto;
+        scale: 1;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainTextRow1 {
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .mainTextRow1Left {
+        width: auto;
+        height: auto;
+    }
+
+    #whereMainText {
+        font-size: 52px;
+        line-height: 1;
+    }
+
+    .mainTextRow1Right {
+        width: auto;
+        height: auto;
+    }
+
+    .mainTextRow1RightTop,
+    .mainTextRow1RightBottom {
+        width: auto;
+        height: auto;
+    }
+
+    #modernMainText,
+    #artMainText {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .mainTextRow2 {
+        height: auto;
+        margin-top: 10px;
+    }
+
+    #meetsMainText {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    /* Stack the overlapping collage images cleanly on mobile */
+    #mainContainerRight {
+        height: auto;
+        margin: 10px;
+        padding: 20px 15px;
+    }
+
+    .pictureCollageContainer {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .pictureCollage,
+    .item-1,
+    .item-2,
+    .item-3 {
+        position: static;
+        width: 100%;
+        height: 220px;
+        margin: 0;
+    }
+
+    /* Exhibitions Grid: 1 card per row on mobile */
+    .informationContainer {
+        margin: 15px 10px;
+        padding: 30px 20px;
+    }
+
+    .sectionTitle {
+        font-size: 22px;
+    }
+
+    .exhibitionCard {
+        width: 100%;
+    }
+}

@@ -366,4 +366,135 @@ body:has(.hasDropdown:hover) {
     margin-bottom: 10px;
     color: #333;
 }
+
+@media (max-width: 768px) {
+    .mainNav {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 15px 20px;
+        padding: 15px 10px;
+    }
+
+    .navItem {
+        height: auto;
+    }
+
+    .navHeader {
+        font-size: 14px;
+    }
+
+    .bookWrapper {
+        height: auto;
+    }
+
+    .bookButton {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+
+    /* Keep Book Tickets dropdown centered on phone screens */
+    .bookDrop {
+        position: fixed;
+        top: 110px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 360px;
+        min-height: 300px;
+    }
+
+    /* Make full-width dropdowns scrollable on small screens */
+    .dropdownMenu {
+        padding: 25px 0;
+        max-height: 75vh;
+        overflow-y: auto;
+    }
+
+    .blackDrop {
+        display: none;
+    }
+
+    /* Stack dropdown columns vertically */
+    .visitLayout,
+    .learnLayout,
+    .aboutLayout {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .mainNavLogo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .cardGrid,
+    .threeCol {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navCard {
+        width: 140px;
+        height: 95px;
+    }
+
+    .learnLeft,
+    .aboutLeft {
+        padding-right: 0;
+        padding-bottom: 20px;
+        border-right: none;
+        border-bottom: 2px solid black;
+        width: 100%;
+    }
+
+    .cardColumn {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .supportRow,
+    .aboutRow {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .supportCard {
+        width: 160px;
+        padding: 15px;
+    }
+
+    .supportTop {
+        width: 130px;
+        height: 130px;
+    }
+
+    .supportQR {
+        width: 110px;
+        height: 110px;
+    }
+
+    .supportBottom {
+        width: 130px;
+        padding: 8px 0;
+    }
+
+    .aboutCard {
+        width: 145px;
+    }
+
+    .aboutUsPicture {
+        width: 110px;
+        height: 110px;
+    }
+
+    .aboutRight {
+        text-align: center;
+        align-items: center;
+    }
+}
 /* End of Navigation */
