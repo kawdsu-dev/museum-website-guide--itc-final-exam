@@ -615,61 +615,91 @@ body:has(.hasDropdown:hover) {
 }
 /* Information Container */
 .informationContainer {
-    background: white;
-    height:1000px;
+    background-color: white;
     margin: 25px 15px;
+    padding: 50px 40px;
+    border-radius: 10px;
 }
 
-.mainInfoRow1 {
-    background-color: red;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+.exhibitionHeader {
+    max-width: 1200px;
+    margin: 0 auto 35px auto;
 }
 
-.mainInfoRow2 {
-    background-color: blue;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sectionTitle {
+    font-family: 'Lemon Milk', sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
     margin-bottom: 10px;
 }
 
-.mainInfoRow3 {
-    background-color: green;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.lineSeperation {
+    background-color: black;
+    height: 2px;
+    width: 100%;
 }
 
-.mainInfoContainer {
-    background-color: white;
-    height: 400px;
-    width: 30%;
+.exhibitionGrid {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin-right:20px;
+    gap: 25px;
+}
+
+.exhibitionCard {
+    background-color: whitesmoke;
+    width: 370px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    display: flex;
     flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.mainInsideInfoContainerImage {
-    background-color: yellow;
-    height: 220px;
-    width: 95%;
+.exhibitionCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.exhibitionImageBox {
+    width: 100%;
+    height: 230px;
+    background-color: #ddd;
+}
+
+.exhibitionImage {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
 }
 
-.mainInsideInfoContainerText {
-    background-color: lightgray;
-    height: 170px;
-    width: 95%;
+.exhibitionTextBox {
+    padding: 20px;
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
 }
 
+.mainExhibitionTitle {
+    font-family: 'Lemon Milk', sans-serif;
+    font-size: 18px;
+    line-height: 1.3;
+    color: black;
+}
+
+.exhibitionMeta {
+    font-size: 13px;
+    color: gray;
+    font-weight: bold;
+}
 /* End of Main */
 
 /*hover*/
