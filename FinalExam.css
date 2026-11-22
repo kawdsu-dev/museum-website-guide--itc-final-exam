@@ -620,6 +620,56 @@ body:has(.hasDropdown:hover) {
     margin: 25px 15px;
 }
 
+.mainInfoRow1 {
+    background-color: red;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mainInfoRow2 {
+    background-color: blue;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.mainInfoRow3 {
+    background-color: green;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainInfoContainer {
+    background-color: white;
+    height: 400px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:20px;
+    flex-direction: column;
+}
+
+.mainInsideInfoContainerImage {
+    background-color: yellow;
+    height: 220px;
+    width: 95%;
+    object-fit: cover;
+}
+
+.mainInsideInfoContainerText {
+    background-color: lightgray;
+    height: 170px;
+    width: 95%;
+}
+
 /* End of Main */
 
 /*hover*/
