@@ -437,7 +437,6 @@ body:has(.visitsNav:hover, .learnNav:hover, .supportNav:hover, .aboutUsNav:hover
         line-height: 1.2;
     }
 
-    /* Stack the overlapping collage images cleanly on mobile */
     #mainContainerRight {
         height: auto;
         margin: 10px;
@@ -462,7 +461,6 @@ body:has(.visitsNav:hover, .learnNav:hover, .supportNav:hover, .aboutUsNav:hover
         margin: 0;
     }
 
-    /* Exhibitions Grid: 1 card per row on mobile */
     .informationContainer {
         margin: 15px 10px;
         padding: 30px 20px;

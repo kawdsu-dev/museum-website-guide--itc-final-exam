@@ -392,7 +392,6 @@ body:has(.hasDropdown:hover) {
         font-size: 14px;
     }
 
-    /* Keep Book Tickets dropdown centered on phone screens */
     .bookDrop {
         position: fixed;
         top: 110px;
@@ -404,7 +403,6 @@ body:has(.hasDropdown:hover) {
         min-height: 300px;
     }
 
-    /* Make full-width dropdowns scrollable on small screens */
     .dropdownMenu {
         padding: 25px 0;
         max-height: 75vh;
@@ -415,7 +413,6 @@ body:has(.hasDropdown:hover) {
         display: none;
     }
 
-    /* Stack dropdown columns vertically */
     .visitLayout,
     .learnLayout,
     .aboutLayout {

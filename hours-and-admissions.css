@@ -5,8 +5,159 @@
 
 .mainContainer {
     background-color: white;
-    width: 100%;
-    margin: 15px;
-    height: 1000px;
+    margin: 25px 15px;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    gap: 40px;
+}
 
+.collumnLeft {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row1 {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.row2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sectionTitle {
+    font-family: 'Lemon Milk', sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.lineSeperation {
+    background-color: black;
+    height: 2px;
+    width: 100%;
+}
+
+.infoBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.subHeading {
+    font-family: 'Lemon Milk', sans-serif;
+    font-size: 19px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.scheduleCard,
+.admissionCard {
+    background-color: whitesmoke;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.scheduleRow,
+.priceRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 15px;
+    gap: 15px;
+}
+
+.scheduleRow:last-child,
+.priceRow:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.dayLabel,
+.priceTag {
+    font-weight: bold;
+    color: black;
+}
+
+.timeLabel {
+    color: #333;
+}
+
+.closedRow .dayLabel,
+.closedRow .timeLabel {
+    color: #b00020;
+    font-weight: bold;
+}
+
+.freeTag {
+    background-color: black;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+}
+
+.infoNote {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fafafa;
+    border-left: 3px solid black;
+    padding: 10px 14px;
+    border-radius: 4px;
+}
+
+.policyList {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #222;
+}
+
+.collumnRight {
+    width:35%;
+    height: 800px;
+}
+
+.imageHoursandAdmi {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .mainContainer {
+        margin: 15px 10px;
+        padding: 25px 20px;
+        flex-direction: column;
+    }
+
+    .collumnLeft {
+        width: 100%;
+    }
+
+    .sectionTitle {
+        font-size: 22px;
+    }
+
+    .scheduleRow,
+    .priceRow {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
 }
